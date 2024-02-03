@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Revenue Authority</title>
+    <link rel="icon" href="kra_logo.png">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, option, select {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        input[type="submit"] {
+            background-color: #fd1a1a;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #494949;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b60000;
+        }
+        input[type="reset"]:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2> Nil E-Return</h2>
+        <h4 class = "red"> All fields marked with * are mandatory</h4>
+        <form action="#" method="post">
+            <label for="name">Type:</label>
+            <select>
+                <option value="self">Self</option>
+                <option value="spouse">Spouse</option>
+            </select>
+
+            <label for="email">TaxPayer Pin:</label>
+            <input type="text" disabled id="email" name="email" placeholder="A0********J" required>
+
+            <label for="message">Tax Obligation:</label>
+            <select>
+                <option value="itri">Income Tax - Resident Individual</option>
+                <option value="itnri">Income Tax Non- Resident Individual</option>
+            </select>
+
+            <input type="reset" value="Back">
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+
+</html>
